@@ -1,0 +1,14 @@
+name: HomeworkWorkflow
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  print-vars:
+   runs-on: ubuntu-latest
+
+   steps:
+   - name: Print Environment Variables
+     run: |
+       echo "Environment Variable (value): ${{ env.ENV_VAR }}"
+       echo "Secret Variable (value): ${{ secrets.ENV_SECRET }}"
