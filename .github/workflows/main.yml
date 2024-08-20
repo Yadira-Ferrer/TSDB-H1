@@ -10,5 +10,5 @@ jobs:
     steps:
       - name: Print Environment Variables
         run: |
-          echo "My ENV_VAR is: ${{ env.ENV_VAR }}"
-          echo "My ENV_SECRET is: ${{ secrets.ENV_SECRET }}"
+          echo "My ENV_VAR is = ${{ env.ENV_VAR }}"
+          echo "My ENV_SECRET is = ${{ secrets.ENV_SECRET }}"
