@@ -1,2 +1,3 @@
-# TSDB-H1
-TypeScript developer bootcamp, homework 1
+# Homework 1
+
+TypeScript Developer Bootcamp
