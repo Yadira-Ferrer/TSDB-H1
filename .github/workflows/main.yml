@@ -5,10 +5,10 @@ on:
 
 jobs:
   print-vars:
-   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-   steps:
-   - name: Print Environment Variables
-     run: |
-       echo "Environment Variable (value): ${{ env.ENV_VAR }}"
-       echo "Secret Variable (value): ${{ secrets.ENV_SECRET }}"
+    steps:
+      - name: Print Environment Variables
+        run: |
+          echo "Environment Variable (value): $ENV_VAR"
+          echo "Secret Variable (value): $ENV_SECRET"
